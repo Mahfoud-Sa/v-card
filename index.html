@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>تفاصيل بطاقة التشغيل</title>
+    <style>
+        /* Reset and base styles */
+        @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cairo;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 20px;
+            max-width: calc(100% - 250px);
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            body {
+                max-width: calc(100% - 50px);
+            }
+            
+        }
+        /* Main container */
+        .container {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        /* Headers */
+        h1 {
+            color: #1a6ea0;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        
+        h2 {
+            color: #1a6ea0;
+            font-size: 18px;
+            margin: 30px 0 20px;
+            text-align: right;
+        }
+        
+        /* Divider line */
+        .divider {
+            height: 1px;
+            background-color: #5F9EA0;
+            margin: 30px 0;
+        }
+        
+        /* Data rows */
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .data-item {
+            width: 33.33%;
+            text-align: center;
+        }
+        
+        .data-label {
+            color: #8ab4cb;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .data-value {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        /* Back button */
+        .back-button {
+            display: inline-block;
+            padding: 8px 40px;
+            background-color: white;
+            color: #1a6ea0;
+            border: 1px solid #1a6ea0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .buttonContainer{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .back-button:hover {
+            background-color: #f0f7fc;
+        }
+        
+        /* Name section */
+        .name-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .name-label {
+            color: #8ab4cb;
+            font-size: 14px;
+        }
+        
+        .name-value {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>تفاصيل بطاقة التشغيل</h1>
+    
+    <div class="container">
+        <h2>بيانات المنشأة/الفرد</h2>
+        
+        <div class="name-section">
+            <div>
+                <div class="name-label">الاسم</div>
+                <div class="name-value">مؤسسة شرف علي بن صالح اللحياني للنقليات</div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <h2>معلومات الترخيص الرئيسي</h2>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">رقم الترخيص</div>
+                <div class="data-value">11/0000335421</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">نوع الترخيص/النشاط</div>
+                <div class="data-value">النقل المتخصص</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">المدينة</div>
+                <div class="data-value">مكة المكرمة</div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <h2>بيانات بطاقة التشغيل</h2>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">رقم البطاقة</div>
+                <div class="data-value">11-000396547</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">نوع بطاقة التشغيل</div>
+                <div class="data-value">النقل المتخصص</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">تاريخ الإصدار</div>
+                <div class="data-value">2024-11-11</div>
+            </div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">تاريخ الانتهاء</div>
+                <div class="data-value">2025-11-11</div>
+            </div>
+            <div class="data-item"></div>
+            <div class="data-item"></div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <h2>معلومات المركبة</h2>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">نوع السيارة - الماركة و الطراز</div>
+                <div class="data-value">مرسيدس خلفية</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">رقم اللوحة</div>
+                <div class="data-value">أ س ن 9248</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">لون المركبة</div>
+                <div class="data-value">وردي / أبيض</div>
+            </div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">سنة الصنع</div>
+                <div class="data-value">2011</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">الرقم التسلسلي</div>
+                <div class="data-value">878819210</div>
+            </div>
+            <div class="data-item"></div>
+        </div>
+    </div>
+    
+    <div class="buttonContainer">
+        <button class="back-button">رجوع</button>
+    </div>
+</body>
+</html>
