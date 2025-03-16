@@ -26,7 +26,23 @@
             body {
                 max-width: calc(100% - 50px);
             }
-            
+
+            /* Change flex-direction to column for mobile view */
+            .data-row, .name-section {
+                flex-direction: column;
+            }
+
+            /* Adjust width for mobile view */
+            .data-item {
+                width: 100%;
+                text-align: right; /* Align text to the right for RTL */
+                margin-bottom: 15px; /* Add spacing between items */
+            }
+
+            /* Adjust spacing for name-section items */
+            .name-section > div {
+                margin-bottom: 15px;
+            }
         }
         /* Main container */
         .container {
@@ -210,7 +226,5 @@
             <div class="data-item"></div>
         </div>
     </div>
-    
-  
 </body>
 </html>
