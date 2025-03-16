@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- تضمين Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <title>تفاصيل بطاقة التشغيل</title>
     <style>
-        /* Reset and base styles */
+        /* إعادة الضبط والأنماط الأساسية */
         @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
         * {
             margin: 0;
@@ -27,24 +29,24 @@
                 max-width: calc(100% - 50px);
             }
 
-            /* Change flex-direction to column for mobile view */
+            /* تغيير اتجاه العناصر إلى عمودي في العرض المحمول */
             .data-row, .name-section {
                 flex-direction: column;
             }
 
-            /* Adjust width for mobile view */
+            /* تعديل العرض للعرض المحمول */
             .data-item {
                 width: 100%;
-                text-align: right; /* Align text to the right for RTL */
-                margin-bottom: 15px; /* Add spacing between items */
+                text-align: right; /* محاذاة النص لليمين */
+                margin-bottom: 15px; /* إضافة مسافة بين العناصر */
             }
 
-            /* Adjust spacing for name-section items */
+            /* تعديل المسافة لعناصر name-section */
             .name-section > div {
                 margin-bottom: 15px;
             }
         }
-        /* Main container */
+        /* الحاوية الرئيسية */
         .container {
             background-color: white;
             border: 1px solid #e0e0e0;
@@ -53,7 +55,7 @@
             margin-top: 20px;
         }
         
-        /* Headers */
+        /* العناوين */
         h1 {
             color: #1a6ea0;
             font-size: 24px;
@@ -68,14 +70,14 @@
             text-align: right;
         }
         
-        /* Divider line */
+        /* خط الفاصل */
         .divider {
             height: 1px;
             background-color: #5F9EA0;
             margin: 30px 0;
         }
         
-        /* Data rows */
+        /* صفوف البيانات */
         .data-row {
             display: flex;
             justify-content: space-between;
@@ -98,7 +100,7 @@
             font-size: 16px;
         }
         
-        /* Back button */
+        /* زر الرجوع */
         .back-button {
             display: inline-block;
             padding: 8px 40px;
@@ -119,7 +121,7 @@
             background-color: #f0f7fc;
         }
         
-        /* Name section */
+        /* قسم الاسم */
         .name-section {
             display: flex;
             justify-content: space-between;
@@ -136,28 +138,31 @@
             font-size: 16px;
             margin-top: 10px;
         }
+
+        /* تنسيق الأيقونة */
+        .icon {
+            margin-right: 10px; /* المسافة بين الأيقونة والنص */
+            color: #1a6ea0; /* لون الأيقونة يطابق لون العنوان */
+        }
     </style>
 </head>
 <body>
-    <h1>تفاصيل بطاقة التشغيل</h1>
+    <h1> <i class="fas fa-id-card icon"></i>تفاصيل بطاقة التشغيل</h1>
     
     <div class="container">
-        <h2>معلومات الفرد/المنشأة</h2>
+        <h2><i class="fas fa-user icon"></i>معلومات الفرد/المنشأة</h2>
         
         <div class="name-section">
             <div>
                 <div class="name-label">المالك</div>
                 <div class="name-value">مؤسسة بسمه احمد هزاع الشمري للمقاولات العامة</div>
             </div>
-            <div>
-                <div class="name-label">المستخدم</div>
-                <div class="name-value">فارغ</div>
-            </div>
+           
         </div>
         
         <div class="divider"></div>
         
-        <h2>معلومات الترخيص الرئيسي</h2>
+        <h2><i class="fas fa-file-alt icon"></i>معلومات الترخيص الرئيسي</h2>
         
         <div class="data-row">
             <div class="data-item">
@@ -168,11 +173,19 @@
                 <div class="data-label">رقم الهيكل</div>
                 <div class="data-value">web6320361325657</div>
             </div>
+            <div class="data-item">
+                <div class="data-label">نوع الترخيص/النشاط</div>
+                <div class="data-value">نقل عام</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">المدينة</div>
+                <div class="data-value">مكة المكرمة</div>
+            </div>
         </div>
         
         <div class="divider"></div>
         
-        <h2>معلومات المركبة</h2>
+        <h2><i class="fas fa-car icon"></i>معلومات المركبة</h2>
         
         <div class="data-row">
             <div class="data-item">
