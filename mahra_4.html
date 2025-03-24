@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- تضمين Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>تفاصيل بطاقة التشغيل</title>
+    <style>
+        /* إعادة الضبط والأنماط الأساسية */
+        @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Cairo;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #333;
+            padding: 20px;
+            max-width: calc(100% - 250px);
+            margin: 0 auto;
+        }
+        @media (max-width: 768px) {
+            body {
+                max-width: calc(100% - 50px);
+            }
+
+            /* تغيير اتجاه العناصر إلى عمودي في العرض المحمول */
+            .data-row, .name-section {
+                flex-direction: column;
+            }
+
+            /* تعديل العرض للعرض المحمول */
+            .data-item {
+                width: 100%;
+                text-align: right; /* محاذاة النص لليمين */
+                margin-bottom: 15px; /* إضافة مسافة بين العناصر */
+            }
+
+            /* تعديل المسافة لعناصر name-section */
+            .name-section > div {
+                margin-bottom: 15px;
+            }
+        }
+        /* الحاوية الرئيسية */
+        .container {
+            background-color: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        
+        /* العناوين */
+        h1 {
+            color: #1a6ea0;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: right;
+        }
+        
+        h2 {
+            color: #1a6ea0;
+            font-size: 18px;
+            margin: 30px 0 20px;
+            text-align: right;
+        }
+        
+        /* خط الفاصل */
+        .divider {
+            height: 1px;
+            background-color: #5F9EA0;
+            margin: 30px 0;
+        }
+        
+        /* صفوف البيانات */
+        .data-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .data-item {
+            width: 33.33%;
+            text-align: center;
+        }
+        
+        .data-label {
+            color: #8ab4cb;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        
+        .data-value {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        /* زر الرجوع */
+        .back-button {
+            display: inline-block;
+            padding: 8px 40px;
+            background-color: white;
+            color: #1a6ea0;
+            border: 1px solid #1a6ea0;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .buttonContainer{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .back-button:hover {
+            background-color: #f0f7fc;
+        }
+        
+        /* قسم الاسم */
+        .name-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        
+        .name-label {
+            color: #8ab4cb;
+            font-size: 14px;
+        }
+        
+        .name-value {
+            font-weight: bold;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+
+        /* تنسيق الأيقونة */
+        .icon {
+            margin-right: 10px; /* المسافة بين الأيقونة والنص */
+            color: #1a6ea0; /* لون الأيقونة يطابق لون العنوان */
+        }
+    </style>
+</head>
+<body>
+    <h1> <i class="fas fa-id-card icon"></i>تفاصيل بطاقة التشغيل</h1>
+    
+    <div class="container">
+        <h2><i class="fas fa-user icon"></i>معلومات الفرد/المنشأة</h2>
+        
+        <div class="name-section">
+            <div>
+                <div class="name-label">المالك</div>
+                <div class="name-value">مؤسسة المهرة العربية للنقليات</div>
+            </div>
+            <div>
+                <div class="name-label">الاسم</div>
+                <div class="name-value">جاسم محمد كنو</div>
+            </div>
+            
+        </div>
+        
+        <div class="divider"></div>
+        
+        <h2><i class="fas fa-file-alt icon"></i>معلومات الترخيص الرئيسي</h2>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">هوية المالك</div>
+                <div class="data-value">7036413636</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">رقم الهيكل</div>
+                <div class="data-value">LDY6GS9D8E0005726</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">نوع الترخيص/النشاط</div>
+                <div class="data-value">نقل عام</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">المدينة</div>
+                <div class="data-value">مكة المكرمة</div>
+            </div>
+        </div>
+        
+        <div class="divider"></div>
+        
+        <h2><i class="fas fa-car icon"></i>معلومات المركبة</h2>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">رقم اللوحة</div>
+                <div class="data-value">أ د ر 5853</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">نوع التسجيل</div>
+                <div class="data-value">نقل عام</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">ماركة المركبة</div>
+                <div class="data-value">زونج تونج</div>
+            </div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">طراز المركبة</div>
+                <div class="data-value">باص</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">وزن المركبة </div>
+                <div class="data-value">11000</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">حمولة المركبة</div>
+                <div class="data-value">55</div>
+            </div>
+        </div>
+        
+        <div class="data-row">
+            <div class="data-item">
+                <div class="data-label">لون المركبة</div>
+                <div class="data-value">ابيض</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">سنة الصنع</div>
+                <div class="data-value">2014</div>
+            </div>
+            <div class="data-item">
+                <div class="data-label">الرقم التسلسلي</div>
+                <div class="data-value">30648310</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
